@@ -15,7 +15,7 @@
 // @import "bootstrap/code";
 @import "bootstrap/grid";
 // @import "bootstrap/tables";
-// @import "bootstrap/forms";
+@import "bootstrap/forms";
 @import "bootstrap/buttons";
 @import "bootstrap/transitions";
 @import "bootstrap/dropdown";
@@ -64,7 +64,7 @@ div.solid {
 
 @for $i from 1 through 12 {
   .col-#{$i} .solid {
-    @include border-radius(4px);
+    @include border-radius(10px);
   }
 }
 

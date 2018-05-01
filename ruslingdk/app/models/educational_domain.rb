@@ -1,6 +1,8 @@
 class EducationalDomain < ApplicationRecord
   # include Colorised
   has_many :menus
+  has_many :events
+
   belongs_to :primary_menu, class_name: 'Menu'
   belongs_to :secondary_menu, class_name: 'Menu'
 

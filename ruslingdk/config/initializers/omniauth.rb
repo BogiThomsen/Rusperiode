@@ -1,3 +1,6 @@
+
+OmniAuth.config.full_host = 'http://28d377a0.ngrok.io'
+
 Rails.application.config.middleware.use OmniAuth::Builder do
   provider :developer unless Rails.env.production?
   provider :github, '3b8bd958f1b650d750dd', 'fbe35f02927408d584411fea3247e2f1c867d705', scope: 'user,user:email'

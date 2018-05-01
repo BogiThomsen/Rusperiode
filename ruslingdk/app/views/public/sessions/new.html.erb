@@ -1,6 +1,11 @@
 <%= form_for @user, url: auth_login_callback_path(provider: 'login') do |f| %>
-  <%= f.text_field :email %>
-  <%= f.text_field :password %>
-
-  <%= f.submit "Submit", :disable_with => 'Submiting...' %>
+  <div class="form-group">
+    <%= f.text_field :email, class: 'form-control', placeholder: 'Email'  %>
+  </div>
+  <div class="form-group">
+    <%= f.text_field :password, class: 'form-control', placeholder: 'Password' %>
+  </div>
+  <%= f.submit "Submit", :disable_with => 'Submiting...', class: 'btn btn-primary' %>
+  <%= link_to "Login with Github", '/auth/github', class: 'btn btn-primary' %>
 <% end %>
+
